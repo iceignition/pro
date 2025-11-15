@@ -7,7 +7,13 @@ window.addEventListener('scroll', () => {
   const pageHeight = document.body.scrollHeight - window.innerHeight;
   const scrollPercent = scrollY / pageHeight;
 
-  if (scrollPercent < 1 / 6) {
+  if (scrollPercent < 0.5 / 6) {
+    headline.innerHTML = `
+      2025<br>
+      Creative Direction for 'DNTP'ISSUE 001<br>
+      Visual Direction, AI Image Generation
+    `;
+  } else if (scrollPercent < 1.5 / 6) {
     headline.innerHTML = `
       2025<br>
       Creative Direction for 'Accumulated Hits'<br>
@@ -21,7 +27,7 @@ window.addEventListener('scroll', () => {
       Filming, Editing, VFX, Graphic Design,<br>
       Book Design, Writing, Installation Design
     `;
-  } else if (scrollPercent < 4 / 6) {
+  } else if (scrollPercent < 3.8 / 6) {
     headline.innerHTML = `
       2024<br>
       Brand Visual Direction for 'Kyolameth' <br>
