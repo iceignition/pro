@@ -20,6 +20,12 @@ window.addEventListener('scroll', () => {
       Visual Direction, Exhibition Planning, Digital Content Production,<br>
       Graphic Design, VFX
     `;
+  } else if (scrollPercent < 2.5 / 6) {
+    headline.innerHTML = `
+      2026<br>
+      Creative Direction for Personal Editorial Work ‘Hard Devotion’(2026)<br>
+      Visual Direction, Photography, Digital Content Production
+    `;
   } else if (scrollPercent < 3.3 / 6) {
     headline.innerHTML = `
       2025 <br>
